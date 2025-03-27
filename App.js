@@ -1,16 +1,16 @@
 import React, { useState } from 'react'; // Importando o useState
-import { View, Text, Button, StyleSheet } from 'react-native'; // Certifique-se de importar o Button
+import { View, Text, Button, StyleSheet } from 'react-native'; // importando ferramentas de react native
 
 export default function App() {
   const [message, setMessage] = useState(''); // Inicializando o useState
 
   const handlePress = () => {
-    setMessage('Você pressionou o botão!');
+    setMessage('Você me pressionou seu safado!');
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hello, World! Meu primeiro botão em React Native</Text> {/* Corrigido Style para style */}
+      <Text style={styles.text}>Meu primeiro botão em React Native</Text> {/* Corrigido Style para style */}
 
       <Button title="Pressione-me!" onPress={handlePress} /> {/* Botão que chama a função handlePress */}
 
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
   },
   text: {
-    fontSize: 25,
+    fontSize: 10,
     color: 'white',
     marginBottom: 10, // Adicionando um pouco de espaço entre os textos
   },
